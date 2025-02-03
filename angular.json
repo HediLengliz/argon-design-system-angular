@@ -43,7 +43,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -85,7 +84,6 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "argon-design-system-angular:build"
           }
         },
         "test": {
@@ -131,7 +129,7 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "argon-design-system-angular:serve:production"
+              "browserTarget": "argon-design-system-angular:build:production"
             }
           }
         },
@@ -147,7 +145,6 @@
       }
     }
   },
-  "defaultProject": "argon-design-system-angular",
   "cli": {
     "analytics": false
   }
